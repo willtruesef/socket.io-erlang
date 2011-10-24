@@ -1,9 +1,11 @@
 all: compile
 
 deps:
+  echo "Fuck1"
 	@./rebar get-deps
 
 compile: deps
+  echo "Fuck2"
 	@./rebar compile
 
 test: force
